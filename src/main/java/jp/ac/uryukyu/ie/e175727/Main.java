@@ -22,11 +22,13 @@ public class Main {
             System.out.println("続ける場合は1を終了する場合は2を押して下さい.");
             Scanner sc = new Scanner(System.in);
             int num = sc.nextInt();
+            count++;
 
             if (num == 2) {
                 break;
             }
-
         }
+        System.out.println("今回は" + count + "回対戦しました.");
+
     }
 }

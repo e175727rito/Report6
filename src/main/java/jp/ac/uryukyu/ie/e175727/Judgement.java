@@ -18,5 +18,32 @@ public class Judgement {
                 System.out.println("あなたはパーを選びました.");
                 break;
         }
+
+        if(hand_num <= 3) {
+
+            System.out.println("player1[" + user1.getName() + "] = " + hand_num);
+            System.out.println("player2[" + user2.getName() + "] = " + user2.getHand());
+
+            if (hand_num == 1 && user2.getHand() == 2) {
+                System.out.println("勝ったのは..." + user1.getName() + "です!");
+
+            } else if (hand_num == 2 && user2.getHand() == 3) {
+                System.out.println("勝ったのは..." + user1.getName() + "です！");
+
+            } else if (hand_num == 3 && user2.getHand() == 1) {
+                System.out.println("勝ったのは..." + user1.getName() + "です！");
+
+            } else if (hand_num == user2.getHand()) {
+                System.out.println("引き分けでーす!");
+
+            } else {
+                System.out.println("勝ったのは..." + user2.getName() + "です！");
+            }
+
+
+        }else{
+            System.out.println("1~3までの数字のどれかを選んで下さい.");
+        }
+
     }
 }

@@ -19,7 +19,7 @@ public class Judgement {
                 break;
         }
 
-        if(hand_num <= 3) {
+        if(hand_num > 0 && hand_num <= 3) {
 
             System.out.println("player1[" + user1.getName() + "] = " + hand_num);
             System.out.println("player2[" + user2.getName() + "] = " + user2.getHand());
